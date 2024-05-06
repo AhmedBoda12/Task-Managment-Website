@@ -1,0 +1,54 @@
+
+  .column {
+    padding: var(--space-16);
+  }
+  
+  .welcoming-title {
+    font-weight: 600;
+    font-size: var(--font-size-24);
+    text-align: center;
+  }
+  
+  .sign-up-title,
+  .login-title{
+    font-weight: 600;
+    font-size: var(--font-size-24);
+    text-align: center;
+    color: #ff9c9c;
+  }
+  .form {
+    max-width: 338px;
+  }
+  
+  .cta-btn {
+    width: 100%;
+    margin-top: var(--space-32);
+  }
+  
+  .sign-up-prompt,
+  .login-prompt {
+    font-weight: 500;
+    font-size: var(--font-size-14);
+    margin-top: var(--space-32);
+    text-align: center;
+  }
+  
+  .sign-up-link,
+  .log-in-link {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #ff9c9c;
+  }
+  
+
+  .center{
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2); /* Adding shadow to the body */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29vw;
+    background: white;
+    border-radius: 16px;
+  }
+ 
