@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Management System - Dashboard</title>
-    <!-- google font: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <!-- main css -->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
   <body>
-    <!-- Because body has height 100%, we need a container to wrap the individual 
-    elements. The purpose is to add top & bottom padding -->
+
     <div class="content-container">
       <!-- success notification -->
       <div id="notification" class="notification green-background">
@@ -41,7 +38,7 @@
             >
               Add task
             </button>
-            <button class="sign-out-cta">Sign out</button>
+            <button class="sign-out-cta" onclick="location.href='./login.html'">Sign out</button>
           </div>
         </div>
       </div>

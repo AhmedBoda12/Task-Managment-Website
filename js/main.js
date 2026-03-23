@@ -12,10 +12,10 @@ const viewTaskOverlay = document.getElementById("view-task-overlay");
 const deleteTaskCTA = document.getElementById("delete-task-cta");
 const editTaskCTA = document.getElementById("edit-task-cta");
 const notification = document.getElementById("notification");
-// the current active overlay
+
 let activeOverlay = null;
 
-//** event listeners **//
+
 
 // radio buttons for view option
 radioViewOptions.forEach((radioButton) => {
@@ -40,7 +40,6 @@ radioViewOptions.forEach((radioButton) => {
 addTaskCTA.addEventListener("click", () => {
   setTaskOverlay.classList.remove("hide");
   activeOverlay = setTaskOverlay;
-  // disable scrolling for content behind the overlay
   document.body.classList.add("overflow-hidden");
 });
 
@@ -49,7 +48,6 @@ closeButtons.forEach((button) => {
   button.addEventListener("click", () => {
     activeOverlay.classList.add("hide");
     activeOverlay = null;
-    // reenable scrolling
     document.body.classList.remove("overflow-hidden");
   });
 });
@@ -64,7 +62,6 @@ taskItems.forEach((task) => {
   task.addEventListener("click", () => {
     viewTaskOverlay.classList.remove("hide");
     activeOverlay = viewTaskOverlay;
-    // disable scrolling for content behind the overlay
     document.body.classList.add("overflow-hidden");
   });
 });
@@ -73,9 +70,7 @@ taskItems.forEach((task) => {
 deleteTaskCTA.addEventListener("click", () => {
   activeOverlay.classList.add("hide");
   activeOverlay = null;
-  // reenable scrolling
   document.body.classList.remove("overflow-hidden");
-  // show notification & hide it after a while
   notification.classList.add("show");
   setTimeout(() => {
     notification.classList.remove("show");
@@ -85,6 +80,5 @@ deleteTaskCTA.addEventListener("click", () => {
 editTaskCTA.addEventListener("click", () => {
     setTaskOverlay.classList.remove("hide");
     activeOverlay = setTaskOverlay;
-    // disable scrolling for content behind the overlay
     document.body.classList.add("overflow-hidden");
   });
