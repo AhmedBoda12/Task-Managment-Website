@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team</title>
+    <link rel="stylesheet" href="../css/team.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Page Header -->
+      <div class="page-header">
+        <div>
+          <h2 class="page-title">Team Members</h2>
+          <p class="page-sub">Manage your team and their assigned tasks</p>
+        </div>
+      </div>
+
+      <!-- Summary Strip -->
+      <div class="summary-strip">
+        <div class="summary-item">
+          <span class="s-value">2</span>
+          <span class="s-label">Total Members</span>
+        </div>
+        <div class="strip-divider"></div>
+
+        <div class="strip-divider"></div>
+        <div class="summary-item">
+          <span class="s-value">37</span>
+          <span class="s-label">Tasks Assigned</span>
+        </div>
+        <div class="strip-divider"></div>
+        <div class="summary-item">
+          <span class="s-value">65%</span>
+          <span class="s-label">Completion Rate</span>
+        </div>
+      </div>
+
+      <!-- Search & Filter -->
+      <div class="filter-bar">
+        <input
+          type="text"
+          placeholder="Search members..."
+          class="search-input"
+        />
+        <div class="filter-tabs">
+          <a href="#" class="filter-tab active">All</a>
+          <a href="#" class="filter-tab">Developer</a>
+          <a href="#" class="filter-tab">QA</a>
+        </div>
+      </div>
+
+      <!-- Members Grid -->
+      <div class="members-grid">
+        <!-- Member 1 -->
+        <div class="member-card">
+          <div class="card-top-bar bar-pink"></div>
+          <div class="card-body">
+            <div class="member-avatar av1">AH</div>
+            <h3 class="member-name">Ahmed Hamada</h3>
+            <span class="member-role role-dev">Developer</span>
+            <p class="member-email">ahmed.h@task.com</p>
+
+            <div class="task-stats">
+              <div class="ts-item">
+                <span class="ts-num">18</span>
+                <span class="ts-lbl">Assigned</span>
+              </div>
+              <div class="ts-divider"></div>
+              <div class="ts-item">
+                <span class="ts-num">13</span>
+                <span class="ts-lbl">Done</span>
+              </div>
+              <div class="ts-divider"></div>
+              <div class="ts-item">
+                <span class="ts-num">5</span>
+                <span class="ts-lbl">Pending</span>
+              </div>
+            </div>
+
+            <div class="progress-row">
+              <span class="prog-pct">72%</span>
+              <div class="prog-track">
+                <div class="prog-fill fill-pink" style="width: 72%"></div>
+              </div>
+            </div>
+
+            <div class="card-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">MAUI</span>
+              <span class="tag">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="member-card">
+          <div class="card-top-bar bar-blue"></div>
+          <div class="card-body">
+            <div class="member-avatar av2">SM</div>
+            <h3 class="member-name">Hager Elwan</h3>
+            <span class="member-role role-design">QA</span>
+            <p class="member-email">hager.e@task.com</p>
+
+            <div class="task-stats">
+              <div class="ts-item">
+                <span class="ts-num">14</span>
+                <span class="ts-lbl">Assigned</span>
+              </div>
+              <div class="ts-divider"></div>
+              <div class="ts-item">
+                <span class="ts-num">11</span>
+                <span class="ts-lbl">Done</span>
+              </div>
+              <div class="ts-divider"></div>
+              <div class="ts-item">
+                <span class="ts-num">3</span>
+                <span class="ts-lbl">Pending</span>
+              </div>
+            </div>
+
+            <div class="progress-row">
+              <span class="prog-pct">79%</span>
+              <div class="prog-track">
+                <div class="prog-fill fill-blue" style="width: 79%"></div>
+              </div>
+            </div>
+
+            <div class="card-tags">
+              <span class="tag">Automation</span>
+              <span class="tag">Manual</span>
+              <span class="tag">Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+/* ===== Page Wrapper ===== */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 36px auto;
+  padding: 0 24px 48px;
+  display: flex; flex-direction: column; gap: 24px;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+  display: flex; justify-content: space-between;
+  align-items: flex-start; flex-wrap: wrap; gap: 12px;
+}
+.page-title { font-size: 26px; font-weight: 800; }
+.page-sub   { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+.btn-primary {
+  background: var(--blue); color: #fff;
+  padding: 10px 22px; border-radius: 8px;
+  font-size: 14px; font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--border-dark);
+  transition: opacity 0.2s;
+}
+.btn-primary:hover { opacity: 0.85; }
+
+/* ===== Summary Strip ===== */
+.summary-strip {
+  display: flex; align-items: center;
+  background: var(--card-bg);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius);
+  padding: 20px 32px;
+  gap: 0;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+}
+.summary-item {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; gap: 4px; min-width: 100px;
+}
+.s-value { font-size: 28px; font-weight: 800; }
+.s-label { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+.strip-divider {
+  width: 1px; height: 40px;
+  background: var(--border-light);
+  margin: 0 8px;
+}
+
+/* ===== Filter Bar ===== */
+.filter-bar {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.search-input {
+  border: 2px solid var(--border-dark);
+  border-radius: 8px; padding: 9px 16px;
+  font-size: 14px; background: var(--card-bg);
+  color: var(--text); outline: none; width: 240px;
+  transition: border-color 0.2s;
+}
+.search-input:focus { border-color: var(--blue); }
+.filter-tabs {
+  display: flex; gap: 4px;
+  background: var(--card-bg);
+  border: 2px solid var(--border-dark);
+  border-radius: 8px; padding: 4px;
+}
+.filter-tab {
+  padding: 7px 16px; border-radius: 5px;
+  font-size: 13px; font-weight: 600;
+  color: var(--text-muted); text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.filter-tab:hover { background: var(--bg); color: var(--text); }
+.filter-tab.active { background: var(--border-dark); color: #fff; }
+
+/* ===== Members Grid ===== */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ===== Member Card ===== */
+.member-card {
+  background: var(--card-bg);
+  border: 2px solid var(--border-dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.11);
+}
+
+.card-top-bar { height: 6px; }
+.bar-pink   { background: var(--pink); }
+.bar-blue   { background: var(--blue); }
+.bar-yellow { background: var(--yellow); }
+.bar-purple { background: var(--purple); }
+
+.card-body {
+  padding: 22px 20px 18px;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 8px;
+  position: relative;
+}
+
+/* Avatar */
+.member-avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; font-weight: 800; color: #fff;
+  border: 3px solid var(--border-dark);
+  margin-bottom: 2px;
+}
+.av1 { background: var(--pink); }
+.av2 { background: var(--blue); }
+.av3 { background: var(--yellow); color: #1a1a1a; }
+.av4 { background: var(--purple); }
+.av5 { background: #34d399; }
+.av6 { background: #f97316; }
+.av7 { background: #a78bfa; }
+.av8 { background: #2dd4bf; }
+
+/* Online / Offline dot */
+.online-dot, .offline-dot {
+  width: 11px; height: 11px; border-radius: 50%;
+  border: 2px solid var(--card-bg);
+  position: absolute; top: 60px; left: calc(50% + 18px);
+}
+.online-dot  { background: #22c55e; }
+.offline-dot { background: var(--text-muted); }
+
+.member-name  { font-size: 15px; font-weight: 800; text-align: center; }
+.member-email { font-size: 11px; color: var(--text-muted); }
+
+/* Role Badge */
+.member-role {
+  font-size: 11px; font-weight: 700;
+  padding: 3px 10px; border-radius: 99px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+.role-dev    { background: var(--pink-light);   color: #b91c1c; }
+.role-design { background: var(--blue-light);   color: #1d4ed8; }
+.role-qa     { background: var(--yellow-light); color: #92400e; }
+.role-mgr    { background: var(--purple-light); color: #7e22ce; }
+
+/* Task Stats Row */
+.task-stats {
+  display: flex; align-items: center;
+  width: 100%; justify-content: center;
+  gap: 0; margin-top: 6px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px; overflow: hidden;
+}
+.ts-item {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; padding: 8px 4px; gap: 2px;
+}
+.ts-num { font-size: 16px; font-weight: 800; }
+.ts-lbl { font-size: 10px; color: var(--text-muted); font-weight: 500; }
+.ts-divider { width: 1px; height: 36px; background: var(--border-light); }
+
+/* Progress Row */
+.progress-row {
+  display: flex; align-items: center;
+  gap: 8px; width: 100%;
+}
+.prog-pct { font-size: 11px; font-weight: 700; min-width: 32px; }
+.prog-track {
+  flex: 1; height: 6px;
+  background: var(--gray-light); border-radius: 99px; overflow: hidden;
+}
+.prog-fill { height: 100%; border-radius: 99px; }
+.fill-pink   { background: var(--pink); }
+.fill-blue   { background: var(--blue); }
+.fill-yellow { background: var(--yellow); }
+.fill-purple { background: var(--purple); }
+
+/* Tags */
+.card-tags {
+  display: flex; flex-wrap: wrap;
+  gap: 5px; justify-content: center;
+  margin-top: 4px;
+}
+.tag {
+  font-size: 10px; font-weight: 600;
+  padding: 3px 8px; border-radius: 5px;
+  background: var(--gray-light);
+  color: var(--text-muted);
+  border: 1px solid var(--border-light);
+}
+
+/* Card Actions */
+.card-actions {
+  display: flex; gap: 8px; width: 100%; margin-top: 6px;
+}
+.btn-tasks, .btn-profile {
+  flex: 1; text-align: center;
+  padding: 8px 0; border-radius: 7px;
+  font-size: 12px; font-weight: 700;
+  text-decoration: none; transition: opacity 0.2s;
+}
+.btn-tasks {
+  background: var(--border-dark); color: #fff;
+}
+.btn-profile {
+  background: var(--gray-light); color: var(--text);
+  border: 1px solid var(--border-light);
+}
+.btn-tasks:hover, .btn-profile:hover { opacity: 0.75; }

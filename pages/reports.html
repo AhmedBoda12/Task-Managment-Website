@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports</title>
+    <link rel="stylesheet" href="../css/reports.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Page Header -->
+      <div class="page-header">
+        <div>
+          <h2 class="page-title">Reports &amp; Analytics</h2>
+        </div>
+        <div class="header-meta">
+          <span class="period-badge">&#128197; March 2026</span>
+        </div>
+      </div>
+
+      <!-- ── Stat Cards Row ── -->
+      <div class="stat-cards">
+        <div class="stat-card border-dark">
+          <div class="stat-body">
+            <span class="stat-value">37</span>
+            <span class="stat-label">Total Tasks</span>
+          </div>
+        </div>
+
+        <div class="stat-card border-blue">
+          <div class="stat-body">
+            <span class="stat-value">31</span>
+            <span class="stat-label">Completed</span>
+          </div>
+        </div>
+
+        <div class="stat-card border-pink">
+          <div class="stat-body">
+            <span class="stat-value">6</span>
+            <span class="stat-label">To Do</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── UP Charts ── -->
+      <div class="two-col">
+        <!-- LEFT: Tasks by Status Bar Chart -->
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <h3 class="chart-title">Tasks by Status</h3>
+            <span class="chart-sub">This month</span>
+          </div>
+
+          <div class="bar-chart">
+            <div class="bar-row">
+              <span class="bar-label">Completed</span>
+              <div class="bar-track">
+                <div class="bar-fill fill-blue" style="width: 65%">
+                  <span class="bar-val">31</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="bar-row">
+              <span class="bar-label">To Do</span>
+              <div class="bar-track">
+                <div class="bar-fill fill-pink" style="width: 12%">
+                  <span class="bar-val">6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Completion Rate Donut (CSS only) -->
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <h3 class="chart-title">Completion Rate</h3>
+            <span class="chart-sub">This month</span>
+          </div>
+          <div class="donut-wrapper">
+            <div class="donut">
+              <span class="donut-label">65%</span>
+            </div>
+            <div class="donut-stats">
+              <div class="donut-stat">
+                <span class="ds-dot dot-blue"></span>
+                <span class="ds-text">Completed <strong>31</strong></span>
+              </div>
+              <div class="donut-stat">
+                <span class="ds-dot dot-pink"></span>
+                <span class="ds-text">To Do <strong>6</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Weekly Progress (Column Chart) ── -->
+      <div class="chart-card full-width">
+        <div class="chart-card-header">
+          <h3 class="chart-title">Weekly Task Completion</h3>
+          <span class="chart-sub">March 2026 — tasks completed per week</span>
+        </div>
+
+        <div class="col-chart">
+          <div class="col-group">
+            <div class="col-bars">
+              <div
+                class="col-bar cb-pink"
+                style="height: 55%"
+                title="To Do: 3"
+              ></div>
+              <div
+                class="col-bar cb-blue"
+                style="height: 70%"
+                title="Done: 7"
+              ></div>
+            </div>
+            <span class="col-label">Week 1</span>
+          </div>
+
+          <div class="col-group">
+            <div class="col-bars">
+              <div
+                class="col-bar cb-pink"
+                style="height: 35%"
+                title="To Do: 2"
+              ></div>
+              <div
+                class="col-bar cb-blue"
+                style="height: 85%"
+                title="Done: 9"
+              ></div>
+            </div>
+            <span class="col-label">Week 2</span>
+          </div>
+
+          <div class="col-group">
+            <div class="col-bars">
+              <div
+                class="col-bar cb-pink"
+                style="height: 20%"
+                title="To Do: 1"
+              ></div>
+              <div
+                class="col-bar cb-blue"
+                style="height: 90%"
+                title="Done: 10"
+              ></div>
+            </div>
+            <span class="col-label">Week 3</span>
+          </div>
+
+          <div class="col-group">
+            <div class="col-bars">
+              <div
+                class="col-bar cb-pink"
+                style="height: 30%"
+                title="To Do: 2"
+              ></div>
+              <div
+                class="col-bar cb-blue"
+                style="height: 60%"
+                title="Done: 5"
+              ></div>
+            </div>
+            <span class="col-label">Week 4</span>
+          </div>
+        </div>
+
+        <!-- Column chart legend -->
+        <div class="col-legend">
+          <span class="legend-item"
+            ><span class="dot dot-pink"></span>To Do</span
+          >
+          <span class="legend-item"
+            ><span class="dot dot-blue"></span>Completed</span
+          >
+        </div>
+      </div>
+
+    
+    <!-- end page-wrapper -->
+  </body>
+</html>
