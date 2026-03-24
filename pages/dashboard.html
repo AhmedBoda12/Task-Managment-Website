@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Management System - Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,18 +14,7 @@
     <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
   <body>
-
     <div class="content-container">
-      <!-- success notification -->
-      <div id="notification" class="notification green-background">
-        <iconify-icon
-          icon="mdi:check-circle-outline"
-          style="color: black"
-          width="24"
-          height="24"
-        ></iconify-icon>
-        <p>The task was deleted</p>
-      </div>
       <!-- header -->
       <div class="max-width-container">
         <div class="header flex items-center justify-between">
@@ -38,13 +26,19 @@
             >
               Add task
             </button>
-            <button class="sign-out-cta" onclick="location.href='./login.html'">Sign out</button>
+            <button
+              class="sign-out-cta"
+              onclick="location.href = './login.html'"
+            >
+              Sign out
+            </button>
           </div>
         </div>
       </div>
       <!-- radio buttons -->
       <div class="radio-buttons-container">
         <div class="max-width-container flex">
+          <!--List Button-->
           <div class="radio-container">
             <input
               type="radio"
@@ -65,6 +59,7 @@
               <span>List</span>
             </label>
           </div>
+          <!--board Button-->
           <div class="radio-container">
             <input
               type="radio"
@@ -83,6 +78,21 @@
               ></iconify-icon>
               <span>Board</span>
             </label>
+          </div>
+          <!--calendar Button-->
+          <div>
+            <a href="./calendar.html">
+              <label for="calendar" class="radio-label">
+                <!-- calendar -->
+                <iconify-icon
+                  icon="material-symbols:calendar-month"
+                  style="color: black"
+                  width="24"
+                  height="24"
+                ></iconify-icon>
+                <span>Calendar</span>
+              </label>
+            </a>
           </div>
         </div>
       </div>
@@ -141,7 +151,7 @@
               </li>
             </ul>
           </div>
-         
+
           <div class="list-container blue">
             <h2 class="list-header">
               <span class="circle blue-background"></span
@@ -252,7 +262,7 @@
               </li>
             </ul>
           </div>
-        
+
           <!-- list -->
           <div>
             <h2 class="list-header">
@@ -392,7 +402,7 @@
                 <span class="circle pink-background"></span><span>To do</span>
               </label>
             </li>
-           
+
             <li>
               <input
                 type="radio"
@@ -448,17 +458,6 @@
           </p>
         </div>
         <div class="control-buttons-container">
-          <!-- edit button -->
-          <button
-            class="button circle-button pink-background flex justify-center items-center"
-          >
-            <iconify-icon
-              icon="material-symbols:edit-rounded"
-              style="color: black"
-              width="24"
-              height="24"
-            ></iconify-icon>
-          </button>
           <!-- delete button -->
           <button
             id="delete-task-cta"
@@ -470,18 +469,6 @@
               width="24"
               height="24"
             ></iconify-icon>
-          </button>
-          <!-- done button-->
-          <button
-            id="check-task-cta"
-            class="button circle-button pink-background flex justify-center items-center"
-          >
-          <iconify-icon
-          icon="mdi:check-circle-outline"
-          style="color: black"
-          width="24"
-          height="24"
-        ></iconify-icon>
           </button>
         </div>
       </div>

@@ -10,8 +10,6 @@ const statusDropdown = document.getElementById("status-dropdown");
 const taskItems = document.querySelectorAll(".task-item");
 const viewTaskOverlay = document.getElementById("view-task-overlay");
 const deleteTaskCTA = document.getElementById("delete-task-cta");
-const editTaskCTA = document.getElementById("edit-task-cta");
-const notification = document.getElementById("notification");
 
 let activeOverlay = null;
 
@@ -71,14 +69,5 @@ deleteTaskCTA.addEventListener("click", () => {
   activeOverlay.classList.add("hide");
   activeOverlay = null;
   document.body.classList.remove("overflow-hidden");
-  notification.classList.add("show");
-  setTimeout(() => {
-    notification.classList.remove("show");
-  }, 3000);
 });
 
-editTaskCTA.addEventListener("click", () => {
-    setTaskOverlay.classList.remove("hide");
-    activeOverlay = setTaskOverlay;
-    document.body.classList.add("overflow-hidden");
-  });

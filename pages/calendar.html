@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Management System - Calendar</title>
+  <link rel="stylesheet" href="../css/calendar.css" />
+</head>
+<body>
+  <!-- Page Content -->
+  <div class="page-wrapper">
+
+    <!-- Calendar Header -->
+    <div class="cal-header">
+      <div class="cal-nav">
+        <a href="#" class="cal-arrow">&#8592;</a>
+        <h2 class="cal-month">March 2026</h2>
+        <a href="#" class="cal-arrow">&#8594;</a>
+      </div>
+      <div class="cal-view-tabs">
+        <a href="#" class="view-tab active">Month</a>
+        <a href="#" class="view-tab">Week</a>
+        <a href="#" class="view-tab">Day</a>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <span class="legend-item"><span class="dot dot-pink"></span> To do</span>
+      <span class="legend-item"><span class="dot dot-blue"></span> Done</span>
+    </div>
+
+    <!-- Calendar Grid -->
+    <div class="calendar">
+
+      <!-- Day Labels -->
+      <div class="day-label">Sun</div>
+      <div class="day-label">Mon</div>
+      <div class="day-label">Tue</div>
+      <div class="day-label">Wed</div>
+      <div class="day-label">Thu</div>
+      <div class="day-label">Fri</div>
+      <div class="day-label">Sat</div>
+
+      <div class="day-cell">
+        <span class="day-num">1</span>
+        <a  class="task-chip chip-pink">Design UI</a>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">2</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">3</span>
+        <a  class="task-chip chip-blue">API Review</a>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">4</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">6</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">7</span>
+        <a  class="task-chip chip-pink">Write Docs</a>
+        <a  class="task-chip chip-blue">Deploy v1</a>
+      </div>
+
+      <div class="day-cell">
+        <span class="day-num">8</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">9</span>
+        <a  class="task-chip chip-pink">Fix Bugs</a>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">10</span>
+      </div>
+   
+      <div class="day-cell">
+        <span class="day-num">12</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">13</span>
+        <a  class="task-chip chip-blue">Code Review</a>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">14</span>
+      </div>
+
+      <!-- Week 3 -->
+      <div class="day-cell">
+        <span class="day-num">15</span>
+        <a  class="task-chip chip-pink">UI Testing</a>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">16</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">17</span>
+        <a  class="task-chip chip-blue">Team Sync</a>
+      </div>
+   
+      <div class="day-cell">
+        <span class="day-num">19</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">20</span>
+        <a  class="task-chip chip-pink">Redesign Nav</a>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">21</span>
+      </div>
+
+      <div class="day-cell">
+        <span class="day-num">23</span>
+      </div>
+      <div class="day-cell today">
+        <span class="day-num today-num">24</span>
+        <a  class="task-chip chip-pink">Design UI</a>
+        <a  class="task-chip chip-blue">API Docs</a>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">25</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">26</span>
+        <a  class="task-chip chip-blue">Deploy v2</a>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">27</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">28</span>
+        <a  class="task-chip chip-pink">Sprint Review</a>
+      </div>
+
+      <!-- Week 5 -->
+      <div class="day-cell">
+        <span class="day-num">29</span>
+      </div>
+      <div class="day-cell">
+        <span class="day-num">31</span>
+        <a  class="task-chip chip-blue">Final Review</a>
+      </div>
+      <!-- Empty cells to complete the 7-col grid -->
+      <div class="day-cell empty"></div>
+      <div class="day-cell empty"></div>
+      <div class="day-cell empty"></div>
+      <div class="day-cell empty"></div>
+
+    </div>
+    <!-- End Calendar Grid -->
+
+  </div>
+  <!-- End Page Wrapper -->
+
+</body>
+</html>
